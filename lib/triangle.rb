@@ -19,6 +19,6 @@ class Triangle
   end
 
   def real_triangle?
-    (length_1 + length_2) > length_3 || 
+    (length_1 + length_2) > length_3 ||
   end
 end
