@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind
-    real_triangle?
+    valid_triangle
     if length_1 == length_2 && length_3 == length_2
       :equilateral
     elsif length_1 == length_2 || length_2 == length_3 || length_1 == length_3
