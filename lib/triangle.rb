@@ -8,6 +8,14 @@ class Triangle
   end
 
   def kind
-    :type
+    real_triangle?
+    if length_1 == length_2 == length_3
+      :equilateral
+    elsif length_1 == length_2 
+      
+  end
+
+  def real_triangle?
+    length_1 + length_2 > length_3
   end
 end
