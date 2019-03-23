@@ -23,4 +23,6 @@ class Triangle
     [length_1, length_2, length_3].each { |length| real_triangle << false if length <= 0 }
     raise TriangleError if real_triangle.include?(false)
   end
+
+  class TriangleError < StandardError
 end
