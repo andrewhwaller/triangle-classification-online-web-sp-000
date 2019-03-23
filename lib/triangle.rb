@@ -18,7 +18,8 @@ class Triangle
     end
   end
 
-  def real_triangle?
-    (length_1 + length_2) > length_3 ||
+  def valid_triangle
+    real_triangle = [(length_1 + length_2 > length_3),  (length_1 + length_3 > length_2), (length_2 + length_3 > length_1)]
+    [length_1, length_2, length_3].each { |length| real_triangle << false if length <= 0 }
   end
 end
